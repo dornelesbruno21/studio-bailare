@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1100" viewBox="0 0 800 1100" role="img" aria-labelledby="title desc">
+<title id="title">Movimento — cartaz demonstrativo</title><desc id="desc">Composição abstrata rosa e dourada sobre fundo vinho, sem fotografias ou marcas de terceiros.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#130d15"/><stop offset="1" stop-color="#4c243e"/></linearGradient><linearGradient id="ribbon" x2="1" y2="1"><stop stop-color="#e9b465"/><stop offset=".5" stop-color="#f0a9bb"/><stop offset="1" stop-color="#996aaf"/></linearGradient></defs>
+<rect width="800" height="1100" fill="url(#bg)"/>
+<circle cx="400" cy="500" r="285" fill="none" stroke="#e9b465" opacity=".3"/>
+<path d="M120 800C700 590 100 490 660 245M185 875C760 640 180 405 580 155" fill="none" stroke="url(#ribbon)" stroke-width="42" opacity=".75"/>
+<text x="400" y="110" text-anchor="middle" fill="#e9b465" font-family="sans-serif" font-size="18" letter-spacing="8">PORTFÓLIO • DANÇA</text>
+<text x="400" y="530" text-anchor="middle" fill="#fff7ee" font-family="Georgia,serif" font-size="66">Movimento</text>
+<text x="400" y="585" text-anchor="middle" fill="#f4c2cc" font-family="sans-serif" font-size="20" letter-spacing="3">CADA PASSO, UMA HISTÓRIA</text>
+<text x="400" y="995" text-anchor="middle" fill="#f4c2cc" font-family="sans-serif" font-size="16">ARTE ILUSTRATIVA • EVENTO FICTÍCIO</text>
+</svg>
