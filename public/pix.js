@@ -1,0 +1,6 @@
+'use strict';
+const quantity=document.getElementById('pix-quantity'),form=document.getElementById('pix-order');
+if(quantity&&form){const update=()=>{const q=Number(quantity.value),unit=Number(form.dataset.unit);document.getElementById('pix-total').textContent=Number.isInteger(q)&&q>=1&&q<=20?'Total: '+(q*unit/100).toLocaleString('pt-BR',{style:'currency',currency:'BRL'}):'Escolha de 1 a 20 ingressos.';};quantity.addEventListener('input',update);update();}
+const code=document.getElementById('pix-code'),box=document.getElementById('pix-qr');
+if(code&&box&&typeof qrcode==='function'){try{const qr=qrcode(0,'M');qr.addData(code.value,'Byte');qr.make();box.innerHTML=qr.createSvgTag({cellSize:4,margin:16,scalable:true});const svg=box.querySelector('svg');svg.setAttribute('role','img');svg.setAttribute('aria-label','QR Code Pix com o valor total do pedido');}catch{box.textContent='Use o código Pix Copia e Cola abaixo.';}}
+document.getElementById('pix-copy')?.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(code.value);document.getElementById('copy-status').textContent='Código copiado. Abra a opção Pix Copia e Cola no aplicativo do seu banco.';}catch{code.focus();code.select();document.getElementById('copy-status').textContent='Selecione e copie o código acima.';}});
